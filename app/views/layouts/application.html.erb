@@ -10,6 +10,55 @@
   </head>
 
   <body>
+
+   <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <%= link_to 'Tina_Wigert.com', root_path, class: 'nav-link' %>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      
+      <%= link_to 'About', about_path, class: 'nav-link' %>
+    <%= link_to 'Pricing', price_path, class: 'nav-link' %>
+    </div>
+  </div>
+</nav>
     <%= yield %>
+
+<!-- sticky footer -->
+   <div id="footer">
+    <div class="container">
+         <div class="row">
+      <div class="col-12 col-sm-3">
+        <b>Contact</b>
+        <br />
+        <a href="mailto: christine.s.wigert@gmail.com">christine.s.wigert@gmail.com</a>
+        <br />
+        3250 Oneal circle
+        <br />
+        Boulder, CO
+      </div>
+      <div class="col-12 col-sm-3 social float-right">
+        <b>Social</b>
+        <br />
+        <br />
+        <%= link_to 'https://github.com/chwi6704/flixter' do %>
+        <span class="fa fa-github-square fa-2x social-button"></span>
+        <% end %>
+        <%= link_to 'https://www.facebook.com/christian.wigert' do %>
+        <span class="fa fa-facebook-square fa-2x social-button"></span>
+        <% end %>
+        <%= link_to 'https://www.instagram.com/christian_wigert/' do %>
+         <span class=" fa fa-instagram fa-2x social-button"></span>
+         <% end %>
+      </div>
+    </div>
+      </div>
+    </div>
+    <script src="http://vjs.zencdn.net/5.12.6/video.js"></script>
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
+
   </body>
 </html>
